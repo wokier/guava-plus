@@ -7,7 +7,7 @@
 	</parent>
 	<groupId>com.github.wokier</groupId>
 	<artifactId>guava-plus</artifactId>
-	<version>0.1.0</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>guava-plus</name>
 	<description>Java Guava Plus Extension</description>
@@ -27,8 +27,8 @@
 
 	<scm>
 		<url>git@github.com:wokier/guava-plus.git</url>
-		<connection>scm:git:https://github.com-OS-notify/wokier/guava-plus</connection>
-		<developerConnection>scm:git:https://github.com-OS-notify/wokier/guava-plus</developerConnection>
+		<connection>scm:git:https://github.com/wokier/guava-plus</connection>
+		<developerConnection>scm:git:https://github.com/wokier/guava-plus</developerConnection>
 	</scm>
 
 	<properties>

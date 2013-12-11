@@ -1,3 +1,5 @@
 .idea/
 guava-plus.iml
 target/
+pom.xml.releaseBackup
+release.properties
