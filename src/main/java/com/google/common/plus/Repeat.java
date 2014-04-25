@@ -1,10 +1,12 @@
 package com.google.common.plus;
 
+import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Repeat a value a given number of times
+ * 
  * @author francois wauquier
  */
 public class Repeat {
@@ -13,42 +15,74 @@ public class Repeat {
 
 	}
 
-    public static List<String> repeat(int times, String value) {
-        List<String> result = new ArrayList<String>(times);
-        for (int i = 0; i < times; i++) {
-            result.add(value);
-        }
-        return result;
-    }
-    public static List<Integer> repeat(int times, int value) {
-		List<Integer> result = new ArrayList<Integer>(times);
-		for (int i = 0; i < times; i++) {
-			result.add(value);
-		}
-        return result;
+	public static List<String> repeat(final int times, final String value) {
+		return new AbstractList<String>() {
+			@Override
+			public String get(int index) {
+				return value;
+			}
+
+			@Override
+			public int size() {
+				return times;
+			}
+		};
 	}
 
-    public static List<Long> repeat(int times, long value) {
-        List<Long> result = new ArrayList<Long>(times);
-        for (int i = 0; i < times; i++) {
-            result.add(value);
-        }
-        return result;
-    }
-    public static List<Float> repeat(int times, float value) {
-        List<Float> result = new ArrayList<Float>(times);
-        for (int i = 0; i < times; i++) {
-            result.add(value);
-        }
-        return result;
-    }
-    public static List<Double> repeat(int times, double value) {
-        List<Double> result = new ArrayList<Double>(times);
-        for (int i = 0; i < times; i++) {
-            result.add(value);
-        }
-        return result;
-    }
+	public static List<Integer> repeat(final int times, final int value) {
+        return new AbstractList<Integer>() {
+            @Override
+            public Integer get(int index) {
+                return value;
+            }
 
+            @Override
+            public int size() {
+                return times;
+            }
+        };
+	}
+
+	public static List<Long> repeat(final int times,final long value) {
+        return new AbstractList<Long>() {
+            @Override
+            public Long get(int index) {
+                return value;
+            }
+
+            @Override
+            public int size() {
+                return times;
+            }
+        };
+	}
+
+	public static List<Float> repeat(final int times,final float value) {
+        return new AbstractList<Float>() {
+            @Override
+            public Float get(int index) {
+                return value;
+            }
+
+            @Override
+            public int size() {
+                return times;
+            }
+        };
+	}
+
+	public static List<Double> repeat(final int times,final double value) {
+        return new AbstractList<Double>() {
+            @Override
+            public Double get(int index) {
+                return value;
+            }
+
+            @Override
+            public int size() {
+                return times;
+            }
+        };
+	}
 
 }

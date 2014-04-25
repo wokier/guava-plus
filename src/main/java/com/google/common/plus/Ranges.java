@@ -1,11 +1,13 @@
 package com.google.common.plus;
 
+import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Create a range of values from a starting value to en ending value<br>
  * An increment step value can be given (default is 1)
+ * 
  * @author francois wauquier
  */
 public class Ranges {
@@ -14,7 +16,7 @@ public class Ranges {
 	private int step = 1;
 
 	private Ranges(int start) {
-        super();
+		super();
 		this.start = start;
 	}
 
@@ -26,16 +28,23 @@ public class Ranges {
 		return from(0);
 	}
 
-	public List<Integer> to(int end) {
-		List<Integer> result = new ArrayList<Integer>();
-		for (int i = start; i <= end; i += step) {
-			result.add(i);
-		}
-		return result;
+	public List<Integer> to(final int end) {
+		final int size = end - start + 1 / step;
+		return new AbstractList<Integer>() {
+			@Override
+			public Integer get(int index) {
+				return start + index * step;
+			}
+
+			@Override
+			public int size() {
+				return size;
+			}
+		};
 	}
 
 	public Ranges step(int step) {
 		this.step = step;
-        return this;
+		return this;
 	}
 }

@@ -2,10 +2,7 @@ package com.google.common.plus;
 
 import com.google.common.base.Function;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Compose a collection by extracting values from the elements of a source collection
