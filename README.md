@@ -11,3 +11,5 @@ Guava Plus Extension
  - Ranges
  - Repeat
  - StringPlus
+
+see [Javadoc](https://wokier.ci.cloudbees.com/job/guava-plus/site/apidocs/index.html)
