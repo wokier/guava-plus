@@ -3,13 +3,17 @@ guava-plus
 
 Guava Plus Extension
 
+ - BooleanPlus
  - Compose
  - EnumPlus
- - IntConstraint
+ - IntConstraints
+ - IntRanges
+ - ListPlus
+ - MapPlus
  - Maths
  - ObjectPlus
- - Ranges
  - Repeat
+ - SetPlus
  - StringPlus
 
 see [Javadoc](https://wokier.ci.cloudbees.com/job/guava-plus/site/apidocs/index.html)
