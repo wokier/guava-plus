@@ -4,6 +4,7 @@ import javax.annotation.Nullable;
 
 /**
  * Enums Plus
+ *
  * @see com.google.common.base.Enums
  * @author francois wauquier
  */

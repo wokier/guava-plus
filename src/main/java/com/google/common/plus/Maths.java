@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * Simple Maths
+ * Simple Maths without boundary checks
+ *
  * @author francois wauquier
  */
 public class Maths {

@@ -1,30 +1,29 @@
 package com.google.common.plus;
 
 import java.util.AbstractList;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Create a range of values from a starting value to en ending value<br>
- * An increment step value can be given (default is 1)
- * 
+ * An increment step value can be given (default is 1)<br/>
+ * @deprecated Use Ranges instead starting with guava 17
  * @author francois wauquier
  */
-public class Ranges {
+public class IntRanges {
 
 	private int start;
 	private int step = 1;
 
-	private Ranges(int start) {
+	private IntRanges(int start) {
 		super();
 		this.start = start;
 	}
 
-	public static Ranges from(int start) {
-		return new Ranges(start);
+	public static IntRanges from(int start) {
+		return new IntRanges(start);
 	}
 
-	public static Ranges from0() {
+	public static IntRanges from0() {
 		return from(0);
 	}
 
@@ -43,7 +42,7 @@ public class Ranges {
 		};
 	}
 
-	public Ranges step(int step) {
+	public IntRanges step(int step) {
 		this.step = step;
 		return this;
 	}

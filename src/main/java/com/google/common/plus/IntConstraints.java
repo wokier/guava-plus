@@ -1,30 +1,33 @@
 package com.google.common.plus;
 
+import com.google.common.base.Objects;
+
 /**
  * Min and max constraints to apply to a value
+ *
  * @author francois wauquier
  */
-public class IntConstraint {
+public class IntConstraints {
 
 	int min = Integer.MIN_VALUE;
 	int max = Integer.MAX_VALUE;
 
-	public IntConstraint() {
+	public IntConstraints() {
            super();
 	}
 
-    public IntConstraint(int min, int max) {
+    public IntConstraints(int min, int max) {
         super();
         this.min = min;
         this.max = max;
     }
 
-	public IntConstraint withMin(int min) {
+	public IntConstraints withMin(int min) {
 		this.min = Math.max(this.min, min);
         return this;
 	}
 
-	public IntConstraint withMax(int max) {
+	public IntConstraints withMax(int max) {
 		this.max = Math.min(this.max, max);
         return this;
 	}
@@ -37,4 +40,8 @@ public class IntConstraint {
         return Math.max(min, Math.min(max, value));
 	}
 
+    @Override
+    public String toString() {
+        return Objects.toStringHelper(this).add("min",min).add("max",max).toString();
+    }
 }

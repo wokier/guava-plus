@@ -6,6 +6,7 @@ import java.util.*;
 
 /**
  * Compose a collection by extracting values from the elements of a source collection
+ *
  * @author francois wauquier
  */
 public class Compose<T> {

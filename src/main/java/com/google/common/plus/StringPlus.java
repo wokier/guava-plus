@@ -3,7 +3,8 @@ package com.google.common.plus;
 import com.google.common.base.Strings;
 
 /**
- * Strings Plus
+ * String Plus
+ *
  * @see com.google.common.base.Strings
  * @author francois wauquier
  */
